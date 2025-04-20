@@ -35,8 +35,10 @@ const HomepageHeader = () => {
           clearIconButtonProps={{
             children: <CloseIcon fontSize="small" />
           }}
-          InputProps={{
-            startAdornment: <AttachFileIcon />
+          slotProps={{
+            input: {
+              startAdornment: <AttachFileIcon />
+            }
           }}
         />
         <div className={styles.buttons}>

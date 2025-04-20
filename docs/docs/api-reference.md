@@ -40,7 +40,7 @@ const handleChange = (value) => {}
 <MuiFileInput onChange={handleChange} />
 ```
 
-## `inputProps => accept`
+## `slotProps.htmlInput => accept`
 
 - Type: `string | undefined`
 - Default: `undefined`
@@ -50,9 +50,9 @@ Check here for more info : https://developer.mozilla.org/en-US/docs/Web/HTML/Att
 
 ```tsx
 // TS will throw an error if the value is a single File instead of an array of Files.
-<MuiFileInput inputProps={{ accept: 'video/*' }} />
-<MuiFileInput inputProps={{ accept: '.png, .jpeg' }} />
-<MuiFileInput inputProps={{ accept: 'audio/*, .pdf' }} />
+<MuiFileInput slotProps={{ htmlInput: { accept: 'video/*' } }} />
+<MuiFileInput slotProps={{ htmlInput: { accept: '.png, .jpeg' } }} />
+<MuiFileInput slotProps={{ htmlInput: { accept: 'audio/*, .pdf' } }} />
 ```
 
 ## `multiple`

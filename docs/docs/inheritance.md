@@ -18,11 +18,13 @@ import AttachFileIcon from '@mui/icons-material/AttachFile'
   size="small"
   variant="outlined"
   disabled
-  InputProps={{
-    inputProps: {
+  slotProps={{
+    htmlInput: {
       accept: 'video/*'
     },
-    startAdornment: <AttachFileIcon />
+    input: {
+      startAdornment: <AttachFileIcon />
+    }
   }}
 />
 ```

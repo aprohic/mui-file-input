@@ -27,8 +27,10 @@ export const Primary: StoryFn<typeof MuiFileInput> = () => {
         clearIconButtonProps={{
           children: <CloseIcon fontSize="small" />
         }}
-        InputProps={{
-          startAdornment: <AttachFileIcon />
+        slotProps={{
+          input: {
+            startAdornment: <AttachFileIcon />
+          }
         }}
         required
         multiple
